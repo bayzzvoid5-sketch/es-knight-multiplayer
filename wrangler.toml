@@ -1,0 +1,16 @@
+name = "es-knight-multiplayer"
+main = "src/index.js"
+compatibility_date = "2026-09-18"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+run_worker_first = true
+
+[[durable_objects.bindings]]
+name = "ROOM_HUB"
+class_name = "RoomHub"
+
+[exports.RoomHub]
+type = "durable-object"
+storage = "sqlite"

@@ -5,7 +5,7 @@ compatibility_date = "2026-09-18"
 [assets]
 directory = "./public"
 binding = "ASSETS"
-run_worker_first =["/websocket"]
+run_worker_first =true
 
 [[durable_objects.bindings]]
 name = "ROOM_HUB"

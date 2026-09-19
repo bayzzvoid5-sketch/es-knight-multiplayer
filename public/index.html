@@ -1535,8 +1535,7 @@ function updateLoading(dt){
    giving Player 2 the same controls and shared boss/enemy state.
 ===================================================================== */
 function mpServerUrl(){
-  const proto=location.protocol==='https:'?'wss':'ws';
-  return (window.HEROES_KNIGHT_WS_URL || (proto+'://'+location.host));
+  return "wss://es-knight-multiplayer.bayzzvoid5.workers.dev/websocket";
 }
 function mpSetStatus(t){ const e=el('mpStatus'); if(e)e.textContent=t; }
 function mpSend(msg){ if(mp.ws && mp.ws.readyState===1) mp.ws.send(JSON.stringify(msg)); }
